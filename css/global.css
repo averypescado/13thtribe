@@ -51,12 +51,11 @@ p {
 .sr-root {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 980px;
+  width: 50%;
+  max-width: 1200px;
   align-content: center;
   justify-content: center;
   height: auto;
-  min-height: 100vh;
   margin: 0 auto;
 }
 .sr-header {
@@ -128,12 +127,24 @@ p {
 
 .hero-text{
   font-size:64px;
+  font-weight:bold;
+}
+.black-text{
+  color:black;
 }
 
 .donations{
   padding-left:50px;
   padding-top:50px;
   display:flex;
+}
+
+.donation_explain{
+  color:black;
+}
+
+.instructions{
+  width:50%;
 }
 
 /* Form */
@@ -511,8 +522,9 @@ pre {
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: auto;
   min-width: 250px;
+  height:600px;
 }
 
 .container .pasha-image-stack {

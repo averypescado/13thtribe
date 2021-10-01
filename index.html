@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Stripe Checkout Sample of Avery's site</title>
-    <meta name="description" content="A demo of Avery client-only Checkout" />
+    <title>13th Tribe</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
     <!-- Load Stripe.js on your website. -->
@@ -26,9 +24,8 @@
     </div>
     <div class="donations">
       <div class="instructions">
-        <div class="hero-text">Please donate using the options to the right</div>
-        <p>If you wish to donate more than the options listed, please email Sydney Mintz a @@</p>
-
+        <div class="hero-text black-text">Please donate</div>
+        <p class="donation_explain">If you wish to donate more than the options listed, please email sydmintz@gmail.com</p>
       </div>
 
       <div class="sr-root">
@@ -37,7 +34,7 @@
             <div class="sr-header__logo"></div>
           </header>
           <div class="sr-container">
-            <section class="container">
+            <div class="container">
               <h1>Thank you for your generosity</h1>
               <button
                 data-checkout-mode="payment"
@@ -69,7 +66,7 @@
             >
             Donate $500
           </button>
-            </section>
+        </div>
           </div>
           <div id="error-message"></div>
         </div>
