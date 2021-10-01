@@ -80,7 +80,7 @@
       // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
       var PUBLISHABLE_KEY = 'pk_live_51JfZAPER0IlXPeYv7wdZUU5kmgsVk4jgURDiSlpEEHA7iHCrNdRtttx9lk9ncfQE8KLPA3HIoJOT9MwSAfBDuJbL00IvM0Og37';
       // Replace with the domain you want your users to be redirected back to after payment
-      var DOMAIN = location.href.replace('https://13thtribe.org/','');
+      var DOMAIN = location.href.replace(/[^/]*$/,'https://13thtribe.org/');
 
       if (PUBLISHABLE_KEY === 'pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP') {
         console.log(
