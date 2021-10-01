@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Stripe Checkout Sample</title>
-    <meta name="description" content="A demo of Stripe client-only Checkout" />
+    <title>Stripe Checkout Sample of Avery's site</title>
+    <meta name="description" content="A demo of Avery client-only Checkout" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -13,41 +13,49 @@
   </head>
 
   <body>
+    <h1>Rabbi Sydney Mintz launched 13thTribe.org in 2021 to create collaborative Jewish projects and programs that inspire and expand Jewish life and spirit.
+
+      13th Tribe invites those who feel the calling, to experience a deeper and more creative Jewish engagement to join us.
+      
+      13th Tribe exists to create and produce projects and partnerships including opportunities for deep learning, retreats, innovative media, sacred theatre, music and culture.</h1>
     <div class="sr-root">
-      <div class="sr-main" style="display: flex;">
+      <div class="sr-main" style="display: flex;"> 
         <header class="sr-header">
           <div class="sr-header__logo"></div>
         </header>
         <div class="sr-container">
           <section class="container">
-            <h1>One-time Donation</h1>
+            <h1>Thank you for your donation</h1>
             <button
               data-checkout-mode="payment"
-              data-price-id="sku_GU4JYXyvvRb2sX"
+              data-price-id="price_1JfavBER0IlXPeYv8wouFn5M"
             >
-              Donate $5.00 once
-            </button>
-            <button
-              data-checkout-mode="payment"
-              data-price-id="sku_GU4KO8nfdg8G2Z"
-            >
-              Donate $15.00 once
+              Donate $10,000.00 once
             </button>
             <button
               data-checkout-mode="payment"
-              data-price-id="sku_GU4LB0wBViiYsm"
+              data-price-id="price_1JfavBER0IlXPeYvpnfow4N5"
             >
-              Donate $50.00 once
+              Donate $5,000 once
             </button>
-          </section>
-          <section class="container">
-            <h1>Recurring Donation</h1>
             <button
-              data-checkout-mode="subscription"
-              data-price-id="plan_GU4MXg0k0Uv1S6"
+              data-checkout-mode="payment"
+              data-price-id="price_1JfavBER0IlXPeYvlYnPzs9Y"
             >
-              Donate $20.00 per month
+              Donate $2,500 once
             </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="price_1JfavBER0IlXPeYvDFEytht7"
+            >
+            Donate $1,000 once
+          </button>
+          <button
+          data-checkout-mode="payment"
+          data-price-id="price_1JfavBER0IlXPeYvwQevPZkx"
+          >
+          Donate $500 once
+        </button>
           </section>
         </div>
         <div id="error-message"></div>
@@ -68,7 +76,7 @@
 
     <script>
       // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
-      var PUBLISHABLE_KEY = 'pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP';
+      var PUBLISHABLE_KEY = 'pk_live_51JfZAPER0IlXPeYv7wdZUU5kmgsVk4jgURDiSlpEEHA7iHCrNdRtttx9lk9ncfQE8KLPA3HIoJOT9MwSAfBDuJbL00IvM0Og37';
       // Replace with the domain you want your users to be redirected back to after payment
       var DOMAIN = location.href.replace(/[^/]*$/, '');
 
