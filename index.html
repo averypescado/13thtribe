@@ -11,68 +11,73 @@
     <!-- Load Stripe.js on your website. -->
     <script src="https://js.stripe.com/v3/"></script>
   </head>
-
   <body>
-    <h1>Rabbi Sydney Mintz launched 13thTribe.org in 2021 to create collaborative Jewish projects and programs that inspire and expand Jewish life and spirit.
+    <div class="header">
+      <div class="content">
+        <div class="hero-text">13th Tribe</div>
+        <p>Innovative, inclusive and UNorthodox Judaism</p>
 
-      13th Tribe invites those who feel the calling, to experience a deeper and more creative Jewish engagement to join us.
-      
-      13th Tribe exists to create and produce projects and partnerships including opportunities for deep learning, retreats, innovative media, sacred theatre, music and culture.</h1>
-    <div class="sr-root">
-      <div class="sr-main" style="display: flex;"> 
-        <header class="sr-header">
-          <div class="sr-header__logo"></div>
-        </header>
-        <div class="sr-container">
-          <section class="container">
-            <h1>Thank you for your donation</h1>
-            <button
+        <p>Rabbi Sydney Mintz launched 13thTribe.org in 2021 to create collaborative Jewish projects and programs that inspire and expand Jewish life and spirit.
+          13th Tribe invites those who feel the calling, to experience a deeper and more creative Jewish engagement to join us.
+          13th Tribe exists to create and produce projects and partnerships including opportunities for deep learning, retreats, innovative media, sacred theatre, music and culture</p>
+      </div>
+      <div class="photo">
+      </div>
+    </div>
+    <div class="donations">
+      <div class="instructions">
+        <div class="hero-text">Please donate using the options to the right</div>
+        <p>If you wish to donate more than the options listed, please email Sydney Mintz a @@</p>
+
+      </div>
+
+      <div class="sr-root">
+        <div class="sr-main" style="display: flex;"> 
+          <header class="sr-header">
+            <div class="sr-header__logo"></div>
+          </header>
+          <div class="sr-container">
+            <section class="container">
+              <h1>Thank you for your generosity</h1>
+              <button
+                data-checkout-mode="payment"
+                data-price-id="price_1JfavBER0IlXPeYv8wouFn5M"
+              >
+                Donate $10,000
+              </button>
+              <button
+                data-checkout-mode="payment"
+                data-price-id="price_1JfavBER0IlXPeYvpnfow4N5"
+              >
+                Donate $5,000
+              </button>
+              <button
+                data-checkout-mode="payment"
+                data-price-id="price_1JfavBER0IlXPeYvlYnPzs9Y"
+              >
+                Donate $2,500
+              </button>
+              <button
               data-checkout-mode="payment"
-              data-price-id="price_1JfavBER0IlXPeYv8wouFn5M"
-            >
-              Donate $10,000.00 once
-            </button>
-            <button
-              data-checkout-mode="payment"
-              data-price-id="price_1JfavBER0IlXPeYvpnfow4N5"
-            >
-              Donate $5,000 once
-            </button>
-            <button
-              data-checkout-mode="payment"
-              data-price-id="price_1JfavBER0IlXPeYvlYnPzs9Y"
-            >
-              Donate $2,500 once
+              data-price-id="price_1JfavBER0IlXPeYvDFEytht7"
+              >
+              Donate $1,000
             </button>
             <button
             data-checkout-mode="payment"
-            data-price-id="price_1JfavBER0IlXPeYvDFEytht7"
+            data-price-id="price_1JfavBER0IlXPeYvwQevPZkx"
             >
-            Donate $1,000 once
+            Donate $500
           </button>
-          <button
-          data-checkout-mode="payment"
-          data-price-id="price_1JfavBER0IlXPeYvwQevPZkx"
-          >
-          Donate $500 once
-        </button>
-          </section>
+            </section>
+          </div>
+          <div id="error-message"></div>
         </div>
-        <div id="error-message"></div>
       </div>
+
+
     </div>
-    <div class="banner">
-      <span>
-        This is a
-        <a href="https://github.com/stripe-samples"> Stripe Sample </a> on how
-        to use Stripe Checkout on GitHub Pages.
-        <a
-          href="https://github.com/stripe-samples/github-pages-stripe-checkout"
-        >
-          View code on GitHub.
-        </a>
-      </span>
-    </div>
+
 
     <script>
       // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
